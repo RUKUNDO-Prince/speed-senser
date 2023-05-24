@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: dodgerblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+form{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 3%;
+    position: relative;
+    top: 60px;
+    left: 330px;
+    
+}
+form>img{
+    width: 100px;
+    height: 70px;
+    position: relative;
+    top: 20px;
+    left: 150px;
+}
+form .data{
+    color:rgb(39, 109, 249);
+    position: relative;
+    top: 20px;
+    left: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inputs {
+    overflow: auto;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    margin: 10px;
+    color: rgb(60, 60, 60);
+  }
+  
+  .input-group {
+    display: inline-block; /* Allows multiple groups to be positioned horizontally */
+    margin: 5px; /* Provides spacing between groups */
+  }
+  
+  .input-group label {
+    display: block; /* Renders labels as block elements */
+  }
+  
+  .input-group select {
+    float: left; /* Floats the input elements to the left */
+    margin-left: 5px; /* Provides spacing between label and input */
+  }
+  select{
+    width: 120px;
+    height: 30px;
+    color: rgb(99, 98, 98);
+  }
+  #submit{
+    position: relative;
+    top: 50px;
+    left: 120px;
+    margin: 10px;
+    border-radius: 3px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(39, 109, 249);
+    color: aliceblue;
+  }
+  #redirect{
+    position: relative;
+    top: 50px;
+    left: 120px;
+    margin: 10px;
+  }
+  #redirect a{
+    text-decoration: none;
+    color:rgb(39, 109, 249);
+  }
+  .circle1{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(39, 109, 249);
+    color: white;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    right: 90px;
+    top: 18px;
+  }
+  .circle2{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(39, 109, 249);
+    color: white;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 140px;
+
+  }
+  .line1{
+    width: 125px;
+    background-size: 50% 100%;
+    height: 5px;
+    background-color: rgb(39, 109, 249);
+    position: relative;
+    right: 68px;
+    border-radius: 25px;
+    top: 30px;
+  }
+  .line2{
+    width: 125px;
+    background-size: 50% 100%;
+    height: 5px;
+    background-color: rgb(39, 109, 249);
+    position: relative;
+    left: 68px;
+    border-radius: 25px;
+    top: 25px;
+  }
+  
