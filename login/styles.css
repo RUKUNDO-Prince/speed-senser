@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+body, html {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 2%;
+    overflow-y: scroll;
+    transition: 0.5s all ease-out;
+}
+
+.login-section {
+    width: 100%;
+    height: 100%;
+    padding: 2% 2.5% 0 2.5%;
+    overflow-y: scroll;
+}
+
+.login-section .login {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 3.7em;
+}
+
+.login-section .login .login-roadmap {
+    width: 100%;
+    padding: 3% 2%;
+    background-color: #eeeeeede;
+    border-radius: 20px;
+    position: relative;
+}
+.login-section .login .login-roadmap h2{
+    font-weight: 700;
+    color: #222222;
+}
+.login-section .login .login-roadmap p{
+    font-weight: 400;
+    color: #a3a3a3;
+}
+
+.login-section .login .login-roadmap .line{
+    position: absolute;
+    width: 5px !important;
+    height: 7rem !important; 
+    background-color: #1e4bad !important;
+    z-index: 10;
+}
+
+.login-section .login .roadmap{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.login-section .login .roadmap .num-roadmap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5em;
+}
+.login-section .login .roadmap .text-roadmap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.3em; 
+}
+
+.login-section .login .roadmap .num-roadmap div:nth-child(1), .login-section .login .roadmap .num-roadmap div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #1e4bad !important;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    z-index: 20;
+    border: 4px solid #7ea4f8 !important;
+}
+.login-section .login .roadmap .num-roadmap div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdcdc;
+    color: #888888;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+
+.login-section .login .login-area{
+    width: 100%;
+    padding: 1%;
+}
+
+.login-section .login .login-area h2{
+    color: #242425;
+    font-size: 22px;
+}
+.login-section .login .login-area p{
+    color: #a3a3a3;
+}
+
+.login-section .login .login-area form{
+    width: 100%;
+    padding: 3% 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.login-section .login .login-area form input{
+    padding: 1rem 4%;
+    border: 1.5px ridge #dcdcdc;
+    outline: none;
+    background-color: #e9e9e9d7;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+}
+.login-section .login .login-area form .login-options{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    align-items: center;
+}
+.login-section .login .login-area form .login-options label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-section .login .login-area form .login-options label input{
+    transform: scale(1.6);
+    border-radius: 5px;
+    margin-right: 2em;
+}
+.login-section .login .login-area form .login-options p{
+    font-size: 14px;
+    color: #1e4bad;
+}
+.login-section .login .login-area form button{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    padding: 1.2rem 0;
+    border: none;
+    outline: none;
+    background-color: #2f6bec;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+.login-area h4{
+    font-weight: 300;
+    color: #2f6bec;
+    margin-top: 1.6rem;    
+}
+
+footer {
+    width: 100%;
+    padding: 3rem 2.5% 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .details div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer .details div h3{
+    display: flex;
+    align-self: start;
+    margin-bottom: 2rem;
+    color: #3f3e3e;
+    font-weight: 800;
+}
+footer .details div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #888888;
+}
+
+footer div{
+    width: 100%;
+    padding: 1rem;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+footer .copyright h5{
+    font-weight: 400;
+}
+footer .copyright h5 span {
+    color: #2f6bec;
+}
+
+@media (max-width: 900px) {
+    .login-section .login{
+        flex-direction: column-reverse;
+    }
+    
+    footer .details{
+        flex-direction: column;
+        justify-content: unset;
+        gap: 1rem;
+    }
+
+    footer .copyright{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .login-section .login .login-roadmap h2{
+        font-size: 20px;
+    }
+}
