@@ -8,7 +8,7 @@ import Statistics from './Statistics';
 import GeoFence from './GeoFence';
 
 const Sidebar = () => {
-  const [selectedLink, setSelectedLink] = useState(null);
+  const [selectedLink, setSelectedLink] = useState('dashboard'); // Set default value to 'dashboard'
 
   const handleLinkClick = (link) => {
     setSelectedLink(link);
