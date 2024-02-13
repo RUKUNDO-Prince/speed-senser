@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #1F7EA1;
+  --text-color1: #000000;
+  --text-color2: #ADB5BD;
+}
+
