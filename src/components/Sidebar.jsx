@@ -1,18 +1,42 @@
-import React from 'react'
-import { logo, dashboard, geofence, live, report, search, statistics, right, avatar } from '../assets' 
+import React, { useState } from 'react';
+import { logo, dashboard, geofence, live, report, search, statistics, right, avatar } from '../assets';
+import Dashboard from './Dashboard';
+import Search from './Search';
+import Report from './Report';
+import Live from './Live';
+import Statistics from './Statistics';
+import GeoFence from './GeoFence';
 
 const Sidebar = () => {
+  const [selectedLink, setSelectedLink] = useState(null);
+
+  const handleLinkClick = (link) => {
+    setSelectedLink(link);
+  };
+
   return (
     <div className='sidebar'>
       <div className='side-links-container'>
         <img src={logo} alt="logo" />
         <ul>
-          <li><img src={dashboard} alt="icon" /><span>Dashboard</span></li>
-          <li><img src={search} alt="icon" /><span>Search</span></li>
-          <li><img src={report} alt="icon" /><span>Report</span></li>
-          <li><img src={live} alt="icon" /><span>Live</span></li>
-          <li><img src={statistics} alt="icon" /><span>Statistics</span></li>
-          <li><img src={geofence} alt="icon" /><span>Geo-Fence</span></li>
+          <li className={selectedLink === 'dashboard' ? 'selected' : ''} onClick={() => handleLinkClick('dashboard')}>
+            <img src={dashboard} alt="icon" /><span>Dashboard</span>
+          </li>
+          <li className={selectedLink === 'search' ? 'selected' : ''} onClick={() => handleLinkClick('search')}>
+            <img src={search} alt="icon" /><span>Search</span>
+          </li>
+          <li className={selectedLink === 'report' ? 'selected' : ''} onClick={() => handleLinkClick('report')}>
+            <img src={report} alt="icon" /><span>Report</span>
+          </li>
+          <li className={selectedLink === 'live' ? 'selected' : ''} onClick={() => handleLinkClick('live')}>
+            <img src={live} alt="icon" /><span>Live</span>
+          </li>
+          <li className={selectedLink === 'statistics' ? 'selected' : ''} onClick={() => handleLinkClick('statistics')}>
+            <img src={statistics} alt="icon" /><span>Statistics</span>
+          </li>
+          <li className={selectedLink === 'geofence' ? 'selected' : ''} onClick={() => handleLinkClick('geofence')}>
+            <img src={geofence} alt="icon" /><span>Geo-Fence</span>
+          </li>
         </ul>
       </div>
       <div className='sidebar-profile'>
@@ -23,8 +47,16 @@ const Sidebar = () => {
         </div>
         <img src={right} alt="icon" />
       </div>
+
+      {/* Conditionally render corresponding component based on the selected link */}
+      {selectedLink === 'dashboard' && <Dashboard />}
+      {selectedLink === 'search' && <Search />}
+      {selectedLink === 'report' && <Report />}
+      {selectedLink === 'live' && <Live />}
+      {selectedLink === 'statistics' && <Statistics />}
+      {selectedLink === 'geofence' && <GeoFence />}
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
