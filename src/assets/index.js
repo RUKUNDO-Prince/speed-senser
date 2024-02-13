@@ -14,6 +14,9 @@ import bar3 from './bar3.svg'
 import card1 from './card1.svg'
 import card2 from './card2.svg'
 import card3 from './card3.svg'
+import bike from './bike.svg'
+import truck from './truck.svg'
+import car from './car.svg'
 
 export {
     logo,
@@ -31,5 +34,8 @@ export {
     bar3,
     card1,
     card2,
-    card3
+    card3,
+    car,
+    bike,
+    truck
 }
