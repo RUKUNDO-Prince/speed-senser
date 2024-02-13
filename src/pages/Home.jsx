@@ -1,9 +1,11 @@
 import React from 'react'
+import { Sidebar } from '../components/index.js'
 
 const Home = () => {
   return (
-    <div>
-      Home
+    <div className='home'>
+        <Sidebar />
+        Component
     </div>
   )
 }

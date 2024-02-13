@@ -113,3 +113,19 @@ body {
 .login-container .login-layout button:hover {
   opacity: 80%;
 }
+
+.home {
+  display: flex;
+}
+
+.sidebar {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+}

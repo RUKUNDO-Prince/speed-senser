@@ -1,9 +1,28 @@
 import React from 'react'
+import { logo, dashboard, geofence, live, report, search, statistics, right, avatar } from '../assets' 
 
 const Sidebar = () => {
   return (
-    <div>
-      Sidebar
+    <div className='sidebar'>
+      <div>
+        <img src={logo} alt="logo" />
+        <ul>
+          <li><img src={dashboard} alt="icon" /><span>Dashboard</span></li>
+          <li><img src={search} alt="icon" /><span>Search</span></li>
+          <li><img src={report} alt="icon" /><span>Report</span></li>
+          <li><img src={live} alt="icon" /><span>Live</span></li>
+          <li><img src={statistics} alt="icon" /><span>Statistics</span></li>
+          <li><img src={geofence} alt="icon" /><span>Geo-Fence</span></li>
+        </ul>
+      </div>
+      <div>
+        <img src={avatar} alt="avatar" />
+        <div>
+          <h3>Amy Horsefighter</h3>
+          <p>ahorsefighter@gmail.com</p>
+        </div>
+        <img src={right} alt="icon" />
+      </div>
     </div>
   )
 }
