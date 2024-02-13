@@ -10,6 +10,7 @@
   --color-primary: #1F7EA1;
   --text-color1: #000000;
   --text-color2: #ADB5BD;
+  --text-color3: #F1F1F1;
 }
 
 body {
@@ -127,5 +128,69 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 300px;
+  padding: 20px 40px 20px 10px;
+}
+
+.sidebar .side-links-container {
+  margin: 10px;
+}
+
+.sidebar .side-links-container ul li {
+  list-style: none;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px;
+}
+
+.sidebar .side-links-container ul li:hover {
+  background-color: var(--text-color3);
+  /* opacity: 80%; */
+}
+
+.sidebar .side-links-container ul li span {
+  margin-left: 20px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left
+}
+
+.sidebar .sidebar-profile {
+  border-top: 1px solid var(--text-color2);
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar .side-links-container .profile {
+  border-radius: 50%;
+}
+
+.sidebar .sidebar-profile div {
+  margin-right: 30px;
+}
+
+.sidebar .side-links-container div h3 {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.sidebar .side-links-container div p {
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #868E96;
 }

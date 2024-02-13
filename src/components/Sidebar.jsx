@@ -4,7 +4,7 @@ import { logo, dashboard, geofence, live, report, search, statistics, right, ava
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <div>
+      <div className='side-links-container'>
         <img src={logo} alt="logo" />
         <ul>
           <li><img src={dashboard} alt="icon" /><span>Dashboard</span></li>
@@ -15,8 +15,8 @@ const Sidebar = () => {
           <li><img src={geofence} alt="icon" /><span>Geo-Fence</span></li>
         </ul>
       </div>
-      <div>
-        <img src={avatar} alt="avatar" />
+      <div className='sidebar-profile'>
+        <img src={avatar} className='profile' alt="avatar" />
         <div>
           <h3>Amy Horsefighter</h3>
           <p>ahorsefighter@gmail.com</p>
