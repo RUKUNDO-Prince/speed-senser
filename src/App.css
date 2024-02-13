@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,3 +12,98 @@
   --text-color2: #ADB5BD;
 }
 
+body {
+  background: #F9FAFB;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-container img {
+  width: 255px;
+  height: 40px;
+}
+
+.login-container .login-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 1px 2px 0px #0000001A;
+  background: #fff;
+  padding: 30px;
+}
+
+.login-container .login-layout h1 {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.login-container .login-layout form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-container .login-layout form label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.login-container .login-layout form input {
+  padding: 8px 0px 8px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--text-color2);
+  width: 430px;
+  margin-bottom: 5px;
+}
+
+.login-container .login-layout p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-primary);
+  margin: 5px 0px;
+}
+
+.login-container .login-layout p:hover {
+  opacity: 80%;
+}
+
+.login-container .login-layout button {
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: 8px;
+  width: 430px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px;
+  border: none;
+  text-align: center;
+}
+
+.login-container .login-layout button:hover {
+  opacity: 80%;
+}
