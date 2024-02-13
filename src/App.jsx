@@ -1,12 +1,16 @@
 import React from 'react'
 import './App.css'
-import { Login } from './pages'
+import { Home, Login } from './pages'
+import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
-      <Login />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </>
   )
 }
 

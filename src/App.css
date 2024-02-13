@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 600px;
 }
 
 .login-container img {
@@ -102,6 +103,11 @@ body {
   padding: 8px;
   border: none;
   text-align: center;
+}
+
+.login-container .login-layout button a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .login-container .login-layout button:hover {

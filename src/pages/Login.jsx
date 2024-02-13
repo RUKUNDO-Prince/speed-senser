@@ -1,5 +1,6 @@
 import React from 'react'
 import { logo } from '../assets'
+import Home from './Home'
 
 const Login = () => {
   return (
@@ -14,7 +15,7 @@ const Login = () => {
             <input type="password" placeholder='..........' />
         </form>
         <p>forgot password?</p>
-        <button>GET IN</button>
+        <button><a href="/home">GET IN</a></button>
       </div>
     </div>
   )
