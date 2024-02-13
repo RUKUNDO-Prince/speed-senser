@@ -7,6 +7,7 @@ import search from './search.svg'
 import statistics from './statistics.svg'
 import right from './right.svg'
 import avatar from './avatar.png'
+import location from './location.svg'
 
 export {
     logo,
@@ -17,5 +18,6 @@ export {
     search,
     statistics,
     right,
-    avatar
+    avatar,
+    location
 }

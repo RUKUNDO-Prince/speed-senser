@@ -116,8 +116,9 @@ body {
   opacity: 80%;
 }
 
-.home {
+.home-container {
   display: flex;
+  gap: 20px;
 }
 
 .sidebar {
@@ -126,10 +127,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
   padding: 20px 40px 20px 10px;
+  height: 650px;
 }
 
 .sidebar .side-links-container {
@@ -148,7 +147,6 @@ body {
 
 .sidebar .side-links-container ul li:hover {
   background-color: var(--text-color3);
-  /* opacity: 80%; */
 }
 
 .selected {
@@ -181,21 +179,54 @@ body {
   margin-right: 30px;
 }
 
-.sidebar .side-links-container div h3 {
-  font-family: Open Sans;
-  font-size: 14px;
+.sidebar .sidebar-profile div h3 {
+  font-family: 'Open Sans';
+  font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
 }
 
-.sidebar .side-links-container div p {
-  font-family: Open Sans;
-  font-size: 12px;
+.sidebar .sidebar-profile div p {
+  font-family: 'Open Sans';
+  font-size: 14px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
   color: #868E96;
+}
+
+.dashboard {
+  margin: 20px;
+}
+
+.dashboard h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.dashboard p {
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.dashboard p span {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 5px;
 }
